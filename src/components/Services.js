@@ -1,37 +1,44 @@
-import React from 'react'
-import styled from 'styled-components'
-import { services } from '../utils/constants'
+import React from "react";
+import styled from "styled-components";
+import { services } from "../utils/constants";
 
 const Services = () => {
   return (
-<Wrapper>
-  <div className='section-center'>
-    <article className='header'>
-      <h3>
-        custom furniture <br/>
-        built only for you
-      </h3>
-      <p>
-        Lorem
-      </p>
-    </article>
-    <div className='services-center'>
-      {services.map((service)=> {
-const {id, icon, title, text} = service;
-      return (
-        <article key={id} className="service">
-          <span className='icon'>{icon}</span>
-          <h4>{title}</h4>
-          <p>{text}</p>
+    <Wrapper>
+      <div className="section-center">
+        <article className="header">
+          <h3>
+            custom furniture <br />
+            built only for you
+          </h3>
+          <p>
+            Cambrian explosion invent the universe colonies cosmos two ghostly
+            white figures in coveralls and helmets are softly dancing Rig Veda.
+            Made in the interiors of collapsing stars with pretty stories for
+            which there's little good evidence at the edge of forever permanence
+            of the stars the carbon in our apple pies white dwarf. Permanence of
+            the stars a still more glorious dawn awaits bits of moving fluff
+            rich in heavy atoms encyclopaedia galactica vanquish the impossible
+            and billions upon billions upon billions upon billions upon billions
+            upon billions upon billions.
+          </p>
         </article>
-      )
-      }
-      )}
-    </div>
-  </div>
-</Wrapper>
-  )
-  }
+        <div className="services-center">
+          {services.map((service) => {
+            const { id, icon, title, text } = service;
+            return (
+              <article key={id} className="service">
+                <span className="icon">{icon}</span>
+                <h4>{title}</h4>
+                <p>{text}</p>
+              </article>
+            );
+          })}
+        </div>
+      </div>
+    </Wrapper>
+  );
+};
 
 const Wrapper = styled.section`
   h3,
@@ -95,5 +102,5 @@ const Wrapper = styled.section`
       transform: translateY(5rem);
     }
   }
-`
-export default Services
+`;
+export default Services;

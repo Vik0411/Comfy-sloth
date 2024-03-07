@@ -1,27 +1,31 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 const Contact = () => {
   return (
     <Wrapper>
-     <div className='section-center'>
-      <h3>Join oir newsletter and 20 percent off</h3>
-      <div className='content'>
-        <p>
-          Lorem 
-        </p>
-        <form className='contact-form'>
-          <input type="email" className='form-input' placeholder='enter email'>
-          </input>
-          <button type="submit" className='submit-btn'>
-            subscribe
-          </button>
-        </form>
+      <div className="section-center">
+        <h3>Join oir newsletter and 20 percent off</h3>
+        <div className="content">
+          <p>
+            Hearts of the stars Apollonius of Perga brain is the seed of
+            intelligence Flatland how far away consciousness.
+          </p>
+          <form className="contact-form">
+            <input
+              type="email"
+              className="form-input"
+              placeholder="enter email"
+            ></input>
+            <button type="submit" className="submit-btn">
+              subscribe
+            </button>
+          </form>
+        </div>
       </div>
-     </div> 
     </Wrapper>
-  )
-}
+  );
+};
 const Wrapper = styled.section`
   padding: 5rem 0;
   h3 {
@@ -85,6 +89,6 @@ const Wrapper = styled.section`
   @media (min-width: 1280px) {
     padding: 15rem 0;
   }
-`
+`;
 
-export default Contact
+export default Contact;
